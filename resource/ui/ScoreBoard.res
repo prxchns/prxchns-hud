@@ -23,7 +23,7 @@
 		"enabled"				"1"
 		"PaintBackgroundType"	"2"
 		"fillcolor"				"0 0 0 120"
-		"image"					"../vgui/scoreboard/panel-scoreboard"
+		"image"					"scoreboard/panel-scoreboard"
 		"scaleImage"			"1"
 	}
 	"prx.blueline"
@@ -50,25 +50,25 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"PaintBackgroundType"	"0"
-		"fillcolor"				"TerroLight"
+		"fillcolor"				"TRLight"
 	}
 	"Spec_Label"
 	{
-		"ControlName"		"Label"
-		"fieldName"			"Spec_Label"
-		"xpos"				"c-288"
-		"ypos"				"c+80"
-		"zpos"				"4"
-		"wide"				"140"
-		"tall"				"10" // 14
-		"autoResize"		"0"
-		"pinCorner"			"0"
-		"visible"			"1"
-		"enabled"			"1"
-		"labelText"			""	// Broadcast // Specs
-		"textAlignment"		"south-west"
-		"font"				"Roboto-Scoreboard"
-		"fgcolor_override"	"180 180 180 200"
+		"ControlName"			"Label"
+		"fieldName"				"Spec_Label"
+		"xpos"					"c-288"
+		"ypos"					"c+80"
+		"zpos"					"4"
+		"wide"					"140"
+		"tall"					"10" // 14
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"labelText"				""	// Broadcast // Specs
+		"textAlignment"			"south-west"
+		"font"					"Roboto-ScoreLabels"
+		"fgcolor_override"		"180 180 180 200"
 	}
 	"HeadLine"
 	{
@@ -209,14 +209,14 @@
 	}
 
 	"PositionLabel"
-	{
+	{	// ??
 		"ControlName"			"Label"
 		"fieldName"				"PositionLabel"
-		"xpos"					"c+287"
+		"xpos"					"r177"	// c+287
 		"ypos"					"c-156"
 		"zpos"					"4"
 		"wide"					"1"
-		"tall"					"15"
+		"tall"					"10"
 		"visible"				"1"
 		"enabled"				"1"
 		"labelText"				""
@@ -224,18 +224,18 @@
 		"textAlignment"			"west"
 		"dulltext"				"0"
 		"brighttext"			"1"
-		"font"					"Roboto-Scoreboard"
+		"font"					"Roboto-ScoreLabels"
 		"fgcolor_override"		"0 0 0 0"
 	}
 	"WinConditionLabel"
-	{
+	{	// Timeleft
 		"ControlName"			"Label"
 		"fieldName"				"WinConditionLabel"
 		"xpos"					"0"
 		"ypos"					"0"
 		"zpos"					"4"
 		"wide"					"80"
-		"tall"					"15"
+		"tall"					"10"
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"1"
@@ -243,13 +243,12 @@
 		"labelText"				""
 		"auto_wide_tocontents"	"1"
 		"textAlignment"			"east"
-		"font"					"Roboto-Scoreboard"
+		"font"					"Roboto-ScoreLabels"
 		"fgcolor_override"		"255 255 255 222"
 		"pin_to_sibling"		"PositionLabel"
-		"pin_corner_to_sibling"	"3"
-		"pin_to_sibling_corner"	"2"
+		"pin_corner_to_sibling"	"0"
+		"pin_to_sibling_corner"	"1"
 	}
-
 
 	"CT_Label"
 	{
@@ -264,10 +263,10 @@
 		"pinCorner"				"0"
 		"visible"				"1"
 		"enabled"				"1"
-		"labelText"				"CT" // "%ct_teamname%"
+		"labelText"				"CT" // %ct_teamname%
 		"auto_wide_tocontents"	"1"
 		"textAlignment"			"west"
-		"font"					"Roboto-Scoreboard"
+		"font"					"Roboto-ScoreLabels"
 		"fgcolor_override"		"CTDark"
 	}
 	"CTSeperator"
@@ -284,7 +283,7 @@
 		"labelText"				"-"
 		"auto_wide_tocontents"	"1"
 		"textAlignment"			"west"
-		"font"					"Roboto-Scoreboard"
+		"font"					"Roboto-ScoreLabels"
 		"fgcolor_override"		"0 0 0 0" // CT1
 		"pin_to_sibling"		"CT_Label"
 		"pin_corner_to_sibling"	"2"
@@ -306,7 +305,7 @@
 		"labelText"				"%ct_alivecount%"
 		"auto_wide_tocontents"	"1"
 		"textAlignment"			"west"
-		"font"					"Roboto-Scoreboard"
+		"font"					"Roboto-ScoreLabels"
 		"fgcolor_override"		"CTDark"
 		"pin_to_sibling"		"CTSeperator"
 		"pin_corner_to_sibling"	"2"
@@ -324,7 +323,7 @@
 		"enabled"				"1"
 		"labelText"				"#Cstrike_Scoreboard_PlayersAlive"
 		"textAlignment"			"west"
-		"font"					"Roboto-Scoreboard"
+		"font"					"Roboto-ScoreLabels"
 		"fgcolor_override"		"CTDark"
 		"pin_to_sibling"		"CTPlayersAlive"
 		"pin_corner_to_sibling"	"2"
@@ -333,21 +332,21 @@
 
 	"CTTeamScore"
 	{
-		"ControlName"		"Label"
-		"fieldName"			"CTTeamScore"
-		"xpos"				"c-97"
-		"ypos"				"c-139"
-		"zpos"				"4"
-		"wide"				"100"
-		"tall"				"15"
-		"autoResize"		"1"
-		"pinCorner"			"0"
-		"visible"			"1"
-		"enabled"			"1"
-		"labelText"			"%ct_totalteamscore%"
-		"textAlignment"		"center"
-		"font"				"Roboto-CondensedSemiBold"
-		"fgcolor_override"	"CTLight"
+		"ControlName"			"Label"
+		"fieldName"				"CTTeamScore"
+		"xpos"					"c-97"
+		"ypos"					"c-139"
+		"zpos"					"4"
+		"wide"					"100"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"labelText"				"%ct_totalteamscore%"
+		"textAlignment"			"center"
+		"font"					"Roboto-CondensedSemiBold"
+		"fgcolor_override"		"CTLight"
 	}
 
 	"T_Label"
@@ -363,11 +362,11 @@
 		"pinCorner"				"0"
 		"visible"				"1"
 		"enabled"				"1"
-		"labelText"				"TR" //"%t_teamname%"
+		"labelText"				"TR" // %t_teamname%
 		"auto_wide_tocontents"	"1"
 		"textAlignment"			"east"
-		"font"					"Roboto-Scoreboard"
-		"fgcolor_override"		"TerroDark"
+		"font"					"Roboto-ScoreLabels"
+		"fgcolor_override"		"TRDark"
 	}
 	"TSeperator"
 	{
@@ -383,7 +382,7 @@
 		"labelText"				"-"
 		"auto_wide_tocontents"	"1"
 		"textAlignment"			"east"
-		"font"					"Roboto-Scoreboard"
+		"font"					"Roboto-ScoreLabels"
 		"fgcolor_override"		"0 0 0 0" 	// TR1
 		"pin_to_sibling"		"T_Label"
 		"pin_corner_to_sibling"	"3"
@@ -405,8 +404,8 @@
 		"labelText"				"%t_alivecount%"
 		"auto_wide_tocontents"	"1"
 		"textAlignment"			"east"
-		"font"					"Roboto-Scoreboard"
-		"fgcolor_override"		"TerroDark" // 255 26 28 255
+		"font"					"Roboto-ScoreLabels"
+		"fgcolor_override"		"TRDark" // 255 26 28 255
 		"pin_to_sibling"		"TSeperator"
 		"pin_corner_to_sibling"	"3"
 		"pin_to_sibling_corner"	"2"
@@ -423,8 +422,8 @@
 		"enabled"				"1"
 		"labelText"				"#Cstrike_Scoreboard_PlayersAlive"
 		"textAlignment"			"east"
-		"font"					"Roboto-Scoreboard"
-		"fgcolor_override"		"TerroDark"
+		"font"					"Roboto-ScoreLabels"
+		"fgcolor_override"		"TRDark"
 		"pin_to_sibling"		"TPlayersAlive"
 		"pin_corner_to_sibling"	"3"
 		"pin_to_sibling_corner"	"2"
@@ -447,7 +446,7 @@
 		"labelText"			"%t_totalteamscore%"
 		"textAlignment"		"center"
 		"font"				"Roboto-CondensedSemiBold"
-		"fgcolor_override"	"TerroLight"
+		"fgcolor_override"	"TRLight"
 	}
 
 	"CTClanLabel"
@@ -465,7 +464,7 @@
 		"enabled"			"1"
 		"labelText"			"Clan"
 		"textAlignment"		"center"
-		"font"				"Roboto-Scoreboard"
+		"font"				"Roboto-ScoreLabels"
 		"fgcolor_override"	"CTDark"
 	}
 
@@ -484,7 +483,7 @@
 		"enabled"			"1"
 		"labelText"			"#Cstrike_SB_PlayerName"
 		"textAlignment"		"west"
-		"font"				"Roboto-Scoreboard"
+		"font"				"Roboto-ScoreLabels"
 		"fgcolor_override"	"CTDark"
 	}
 
@@ -503,7 +502,7 @@
 		"enabled"			"1"
 		"labelText"			"#Cstrike_SB_Score"
 		"textAlignment"		"center"
-		"font"				"Roboto-Scoreboard"
+		"font"				"Roboto-ScoreLabels"
 		"fgcolor_override"	"CTDark"
 	}
 
@@ -522,7 +521,7 @@
 		"enabled"			"1"
 		"labelText"			"#Cstrike_SB_Deaths"
 		"textAlignment"		"center"
-		"font"				"Roboto-Scoreboard"
+		"font"				"Roboto-ScoreLabels"
 		"fgcolor_override"	"CTDark"
 	}
 
@@ -541,7 +540,7 @@
 		"enabled"			"1"
 		"labelText"			"#Cstrike_SB_Latency"
 		"textAlignment"		"center"
-		"font"				"Roboto-Scoreboard"
+		"font"				"Roboto-ScoreLabels"
 		"fgcolor_override"	"CTDark"
 	}
 
@@ -560,8 +559,8 @@
 		"enabled"			"1"
 		"labelText"			"Clan"
 		"textAlignment"		"center"
-		"font"				"Roboto-Scoreboard"
-		"fgcolor_override"	"TerroDark" // 255 26 28 255
+		"font"				"Roboto-ScoreLabels"
+		"fgcolor_override"	"TRDark" // 255 26 28 255
 	}
 
 	"TPlayerLabel"
@@ -579,8 +578,8 @@
 		"enabled"			"1"
 		"labelText"			"#Cstrike_SB_PlayerName"
 		"textAlignment"		"west"
-		"font"				"Roboto-Scoreboard"
-		"fgcolor_override"	"TerroDark" // 255 26 28 255
+		"font"				"Roboto-ScoreLabels"
+		"fgcolor_override"	"TRDark" // 255 26 28 255
 	}
 
 	"TPlayerScoreLabel"
@@ -598,8 +597,8 @@
 		"enabled"			"1"
 		"labelText"			"#Cstrike_SB_Score"
 		"textAlignment"		"center"
-		"font"				"Roboto-Scoreboard"
-		"fgcolor_override"	"TerroDark"
+		"font"				"Roboto-ScoreLabels"
+		"fgcolor_override"	"TRDark"
 	}
 
 	"TPlayerDeathsLabel"
@@ -617,8 +616,8 @@
 		"enabled"			"1"
 		"labelText"			"#Cstrike_SB_Deaths"
 		"textAlignment"		"center"
-		"font"				"Roboto-Scoreboard"
-		"fgcolor_override"	"TerroDark"
+		"font"				"Roboto-ScoreLabels"
+		"fgcolor_override"	"TRDark"
 	}
 
 	"TPlayerLatencyLabel"
@@ -636,8 +635,8 @@
 		"enabled"			"1"
 		"labelText"			"#Cstrike_SB_Latency"
 		"textAlignment"		"center"
-		"font"				"Roboto-Scoreboard"
-		"fgcolor_override"	"TerroDark"
+		"font"				"Roboto-ScoreLabels"
+		"fgcolor_override"	"TRDark"
 	}
 
 	"CTPlayerArea"
@@ -688,7 +687,7 @@
 		"wide"				"45"
 		"tall"				"10"
 		"visible"			"0"
-		"font"				"Courier New-Small"
+		"font"				"Roboto-Scoreboard"
 		"fillcolor"			"0 222 0 64"
 	}
 
@@ -772,7 +771,7 @@
 		"wide"				"10"
 		"tall"				"10"
 		"visible"			"0"
-		"fillcolor"			"TerroDark" // 222 0 0 64
+		"fillcolor"			"TRDark" // 222 0 0 64
 	}
 
 	"TPlayerClan0"
@@ -814,7 +813,7 @@
 		"tall"				"10"
 		"visible"			"0"
 		"font"				"Roboto-Scoreboard"
-		"fillcolor"			"TerroDark" // 222 0 0 64
+		"fillcolor"			"TRDark" // 222 0 0 64
 	}
 
 	"TPlayerScore0"
@@ -842,7 +841,7 @@
 		"tall"				"10"
 		"visible"			"0"
 		"font"				"Roboto-Scoreboard"
-		"fillcolor"			"TerroDark" // 222 0 0 64
+		"fillcolor"			"TRDark" // 222 0 0 64
 	}
 
 	"TPlayerLatency0"
@@ -874,7 +873,7 @@
 		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
-		"font"				"Roboto-Scoreboard"
+		"font"				"Roboto-ScoreLabels"
 		"fgcolor_override"	"255 255 255 120"
 	}
 
@@ -893,7 +892,21 @@
 		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
-		"font"				"Roboto-Scoreboard"
+		"font"				"Roboto-ScoreLabels"
 		"fgcolor_override"	"255 255 255 120"
+	}
+	"prx.bunny"
+	{
+		"ControlName"			"ScalableImagePanel"
+		"fieldName"				"prx.bunny"
+		"xpos"					"r160"
+		"ypos"					"c+89"
+		"zpos"					"-1"
+		"wide"					"28"
+		"tall"					"28"
+		"visible"				"1"
+		"enabled"				"1"
+		"image"					"replay/thumbnails/prxbunny"
+		"scaleImage"			"1"
 	}
 }

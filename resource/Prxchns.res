@@ -7,10 +7,12 @@
 //		Fonts			- list of all the fonts used by app
 //		Borders			- description of all the borders
 //
-//	Helpfull links:
-// https://developer.valvesoftware.com/wiki/VGUI_Editing > Styles/Classes/Layout Tags/...
-// https://developer.valvesoftware.com/wiki/VGUI_Position_and_Size_Flags
-// https://developer.valvesoftware.com/wiki/Understanding_VGUI2_Resource_Files
+//	Helpful links:
+// 	· https://developer.valvesoftware.com/wiki/VGUI_Editing > Styles/Classes/Layout Tags/...
+// 	· https://developer.valvesoftware.com/wiki/VGUI_Position_and_Size_Flags
+// 	· https://developer.valvesoftware.com/wiki/Understanding_VGUI2_Resource_Files
+// 	· https://github.com/JarateKing/TF2-Hud-Reference/
+// 	· https://github.com/VillageGreenPreserver/VGP-Guides/blob/main/reference/PanelList.md
 // ---------------------------------------------------------------------------------------------//
 Scheme
 {
@@ -25,18 +27,18 @@ Scheme
 		"prx.Subtle"						"154 150 180 255"	// Secondary text color..
 		"prx.Muted"							"120 116 144 255"	// Tertiary text color
 
-		"prx.Primary"						"255 69 137 255"	// Font color: Enabled entry on  CP Menu/Main Menu highlight
-		"prx.Secondary"						"165 165 165 230"	// Font color: Disabled entry on CP Menu/
-		"prx.Background"					"0 0 0 99"			// Background: Main timer panel/CP Menu
+		"prx.Primary"						"040 100 255 255"	// CheckPoint Menu (Enabled)
+		"prx.Secondary"						"245 245 245 255"	// CheckPoint Menu (Disabled)
+		"prx.Background"					"0 0 0 120"			// Background: Main timer panel/CP Menu
 
 		// Team colors
-		"TerroDark"							"210 210 210 240"	// TR Scoreboard text color
-		"CTDark"							"210 210 210 240"	// CT Scoreboard text color
-		"TerroLight"						"255 30 120 255"
+		"TRDark"							"210 210 210 200"	// TR Scoreboard text color
+		"CTDark"							"210 210 210 200"	// CT Scoreboard text color
+		"TRLight"							"255 30 120 255"
 		"CTLight"							"30 90 255 255"
 
 		// Base colors
-		"Black"								"0 0 0 222"
+		"Black"								"0 0 0 255"
 		"White"								"255 255 255 222"
 		"OffWhite"							"216 216 216 255"
 		"DullWhite"							"142 142 142 255"
@@ -51,12 +53,12 @@ Scheme
 	BaseSettings
 	{
 		// Checkpoint Menu // CHudMenu // LJStats // Radio Menu
-		ItemColor							"prx.Primary"		// Enabled text entries color in said menus
-		MenuColor							"prx.Secondary" 	// Disabled text entries color ^
+		ItemColor							"prx.Secondary"		// Enabled text entries color in said menus
+		MenuColor							"prx.Primary" 		// Disabled text entries color ^
 		MenuBoxBg							"prx.Background"	// background color ^
 
 		// Main Timer HUD Colors
-		HintMessageFg						"prx.Text"			// Text color
+		HintMessageFg						"255 255 255 245"	// Text color
 		HintMessageBg						"prx.Background"	// Background color
 
 		team0								"204 204 204 255"	// Spectators
@@ -67,8 +69,8 @@ Scheme
 		Hostage_Yellow						"Panel.FgColor"		// Hostage
 
 		// vgui_controls color specifications
-		Border.Bright						"Blank"				// the lit side of a control
-		Border.Dark							"Blank"				// the dark/unlit side of a control
+		Border.Bright						"TRLight"			// the lit side of a control
+		Border.Dark							"CTLight"			// the dark/unlit side of a control
 		Border.Selection					"140 140 180 140"	// the additional border color for displaying the default/selected button
 
 		Button.TextColor					"prx.Text"
@@ -82,8 +84,8 @@ Scheme
 		CheckButton.TextColor				"prx.Muted"
 		CheckButton.SelectedTextColor		"prx.Text"
 		CheckButton.BgColor					"prx.bgBase"
-		CheckButton.Border1					"Border.Dark"		// the left checkbutton border
-		CheckButton.Border2					"Border.Bright"		// the right checkbutton border
+		CheckButton.Border1					"Blank"		// the left checkbutton border Border.Dark
+		CheckButton.Border2					"Blank"		// the right checkbutton border Border.Bright
 		CheckButton.Check					"prx.Text"			// color of the check itself
 
 		ComboBoxButton.ArrowColor			"prx.Subtle"
@@ -145,7 +147,7 @@ Scheme
 		Menu.ArmedBgColor					"130 130 130 40"
 		Menu.TextInset						"6"
 
-		Chat.TypingText						"prx.Text"
+		Chat.TypingText						"255 255 255 255"
 
 		Panel.FgColor						"prx.Subtle"
 		Panel.BgColor						"Blank"
@@ -167,18 +169,18 @@ Scheme
 
 		RichText.TextColor					"prx.Muted"
 		RichText.BgColor					"prx.bgBase"
-		RichText.SelectedTextColor			"Black"
-		RichText.SelectedBgColor			"prx.Text"
+		RichText.SelectedTextColor			"255 255 255 255"
+		RichText.SelectedBgColor			"prx.Primary"
 
-		ScrollBar.Wide						"17"
-		ScrollBarButton.FgColor				"prx.Text"
-		ScrollBarButton.BgColor				"23 26 33 160"		// Blank
+		ScrollBar.Wide						"10"
+		ScrollBarButton.FgColor				"Blank"
+		ScrollBarButton.BgColor				"Blank"		// Blank
 		ScrollBarButton.ArmedFgColor		"prx.Text"
-		ScrollBarButton.ArmedBgColor		"Blank"
+		ScrollBarButton.ArmedBgColor		"prx.bgSurface"
 		ScrollBarButton.DepressedFgColor	"prx.Text"
 		ScrollBarButton.DepressedBgColor	"255 255 255 255"
-		ScrollBarSlider.FgColor				"23 26 33 200"		// slider nob color
-		ScrollBarSlider.BgColor				"23 26 33 64"		// slider background color
+		ScrollBarSlider.FgColor				"66 135 245 140"		// slider nob color
+		ScrollBarSlider.BgColor				"Blank"		// slider background color
 
 		// Settings menu keybinds
 		SectionedListPanel.HeaderTextColor	"prx.Text"
@@ -236,12 +238,12 @@ Scheme
 		Main.Title3.Y						"-10"
 		Main.Title3.Color					"255 255 0 0"
 		// Top-left corner of the menu on the main screen
-		Main.Menu.X							"32"
+		Main.Menu.X							"16"
 		Main.Menu.Y							"380"
 		// Blank space to leave beneath the menu on the main screen
-		Main.BottomBorder					"32"
+		Main.BottomBorder					"16"
 
-		Console.TextColor					"prx.Muted"
+		Console.TextColor					"prx.Primary"
 		Console.DevTextColor				"prx.Text"
 
 		NewGame.TextColor					"prx.Text"
@@ -258,13 +260,13 @@ Scheme
 		// weapon selection colors
 		SelectionNumberFg					"255 220 0 200"
 		SelectionTextFg						"255 220 0 200"
-		SelectionEmptyBoxBg 				"0 0 0 80"
-		SelectionBoxBg	 					"0 0 0 80"
+		SelectionEmptyBoxBg					"0 0 0 80"
+		SelectionBoxBg						"0 0 0 80"
 		SelectionSelectedBoxBg				"0 0 0 190"
 		// HL1-style HUD colors Weapon Pickup
-		Yellowish 							"TerroDark"
-		Normal 								"255 255 255 180" // Pickup
-		Caution 							"TerroLight"
+		Yellowish							"TRDark"
+		Normal								"255 255 255 180" // Pickup
+		Caution								"TRLight"
 		ProgressBarFg						"255 30 13 255"
 	}
 
@@ -272,12 +274,11 @@ Scheme
 
 	Fonts
 	{
-		// Custom fonts
 		"Roboto-Small"
 		{
 			"1"
 			{
-				"name"			"Roboto"
+				"name"			"Roboto Condensed Light"
 				"tall"			"8"
 				"weight"		"700"
 				"antialias"		"1"
@@ -288,11 +289,24 @@ Scheme
 			"1" // CP Menu / Radio Menu / Left side panel font
 			{
 				"name"			"Roboto Condensed Light"
-				"tall"			"8"
-				"weight"		"500"
+				"tall"			"7"
+				"weight"		"600"
 				"antialias"		"0"
 				"additive"		"0"
 				"dropshadow"	"1"
+			}
+		}
+		"Roboto-HudMenuDisabled"
+		{
+			"1" // CP Menu / Radio Menu / Left side panel font
+			{
+				"name"			"Roboto Condensed Light"
+				"tall"			"7"
+				"weight"		"500"
+				"antialias"		"0"
+				"additive"		"1"
+				"dropshadow"	"0"
+				"outline"		"1"
 			}
 		}
 		"Roboto-Light"
@@ -306,6 +320,16 @@ Scheme
 			}
 		}
 		"Roboto-Scoreboard"
+		{
+			"1" // Scoreboard Clan/Name/Kills/...
+			{
+				"name"			"Roboto Condensed Light"
+				"tall"			"7"
+				"weight"		"600"
+				"antialias"		"1"
+			}
+		}
+		"Roboto-ScoreLabels"
 		{
 			"1" // Scoreboard/TAB labels
 			{
@@ -323,14 +347,28 @@ Scheme
 				"tall"			"14"
 				"weight"		"900"
 				"antialias"		"1"
+				"additive"		"1"
 			}
 		}
 		// Default fonts
 		"Default"
 		{
-			"6" // Right side panel text / Scoreboard player text / (BhopTimer HUD speed ?? TODO check if true)
+			"1" // Right side panel text / Scoreboard player text / bhoptimer hud speed ???
+				// for some reason this has to have the same settings of HudHintText shrug
 			{
-				"name"			"Roboto"
+				"name"			"Roboto Condensed Light"
+				"tall"			"7"
+				"weight"		"700"
+				"antialias"		"0"
+				"dropshadow"	"0"
+				"range"			"0x0000 0x00FF"
+			}
+		}
+		"HudHintText"
+		{
+			"1" // Bottom center panel / Main Timer HUD
+			{
+				"name"			"Roboto Condensed Light"
 				"tall"			"7"
 				"weight"		"700"
 				"antialias"		"0"
@@ -338,57 +376,69 @@ Scheme
 				"range"			"0x0000 0x00FF"
 			}
 		}
+		"CenterPrintText"
+		{
+			"1" // game_text hudhint jhud speedometer
+			{
+				"name"			"Roboto Condensed SemiBold" [!$OSX] // Trebuchet MS
+				"tall"			"13"
+				"weight"		"800"
+				"antialias"		"0"
+				"additive"		"1"
+			}
+		}
+		"Trebuchet24"
+		{
+			"1" // showkeys / strafetrainer / center hud text
+			{
+				"name"			"Roboto Condensed SemiBold"
+				"tall"			"13"
+				"weight"		"800"
+				"additive"		"1"
+			}
+		}
 		"DefaultFixedOutline"
 		{
-			"4" // net_graph
+			"1" // net_graph
 			{
 				"name"			"Roboto" [$WINDOWS]
-				"name"			"Roboto" [$POSIX]
-				"tall"			"12" [$POSIX]
 				"tall"			"12"
 				"tall_lodef"	"15"
 				"tall_hidef"	"20"
 				"weight"		"0"
-				"range"			"0x0000 0x017F"
-				"yres"			"1024 1199"	// 16:9 aspect Width 1920x1080
-				"outline"		"0"	// hard to read? enable outline and disable additive
+				"yres"			"1 9999"
+				"outline"		"0"
 				"additive"		"1"
 				"antialias"		"1"
 			}
 		}
 		"DefaultSmall"
 		{
-			"4"	// ?
+			"1"	// ?
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed Light"
 				"tall"		"12"
 				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"		"1024 1199"
 				"antialias"	"1"
 			}
 		}
 		"DefaultVerySmall"
 		{
-			"4"	// ?
+			"1"	// ?
 			{
-				"name"		"Roboto"
-				"tall"		"17"
+				"name"		"Roboto Condensed Light"
+				"tall"		"14" // 17
 				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"		"1024 1199"
 				"antialias"	"1"
 			}
 		}
 		"DefaultVerySmallFallBack"
 		{
-			"2"	// Used by scoreboard and spectator UI for names which don't map in the normal fashion
+			"1"	// Used by scoreboard and spectator UI for names which don't map in the normal fashion
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed Light"
 				"tall"		"10"
 				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"		"600 1199"
 				"antialias"	"1"
 			}
 		}
@@ -396,40 +446,30 @@ Scheme
 		{
 			"1"	// ?
 			{
-				"name"			"Roboto"
+				"name"			"Roboto Condensed"
 				"tall"			"14"
 				"weight"		"0"
 			}
 		}
 		"MenuLarge"
 		{
-			"1"	// huh menu?
+			"1"	// ?
 			{
 				"name"			"Roboto Mono"
 				"tall"			"10"
 				"weight"		"500"
-				"antialias"	 	"0"
+				"antialias"		"0"
 			}
 		}
 		"ConsoleText"
 		{
 			"1"	// console :)
 			{
-				"name"			"Roboto"
+				"name"			"Roboto Condensed Light"
 				"tall"			"13"
-				"weight"		"250"
+				"weight"		"1500"
 				"dropshadow"	"0"
-				"antialias"	  "1"
-			}
-		}
-		"Trebuchet24"
-		{
-			"1" // showkeys / strafetrainer / center hud text
-			{
-				"name"			"Roboto-CondensedSemiBold"
-				"tall"			"13"
-				"weight"		"900"
-				"additive"		"1"
+				"antialias"		"1"
 			}
 		}
 		"DefaultFixed"
@@ -451,37 +491,15 @@ Scheme
 				"dropshadow"	"1"
 			}
 		}
-		"CenterPrintText"
-		{
-			"1" // game_text hudhint jhud speedometer
-			{
-				"name"			"Roboto-CondensedSemiBold" [!$OSX] // Trebuchet MS
-				"tall"			"13"
-				"weight"		"800"
-				"antialias"	 	"0"
-				"additive"		"1"
-			}
-		}
-		"HudHintText"
-		{
-			"1" // Bottom center panel / Main Timer HUD
-			{
-				"name"			"Roboto Condensed"
-				"tall"			"7"
-				"weight"		"700"
-				"antialias"	 	"0"
-				"dropshadow"	"0"
-				"range" 		"0x0000 0x00FF"
-			}
-		}
 		"MenuTitle"
 		{
 			"1" // Main menu text buttons
 			{
 				"name"			"Roboto Mono"
 				"tall"			"14"
-				"weight"		"620"
+				"weight"		"700"
 				"antialias"		"1"
+				"yres"			"1 9999"
 			}
 		}
 	}

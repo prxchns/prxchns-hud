@@ -404,7 +404,7 @@
 
 		"TextFont"				"KillfeedFontSmall"
 		"CTTextColor"			"CTLight"
-		"TerroristTextColor"	"TerroLight"
+		"TerroristTextColor"	"TRLight"
 		"bgcolor_override" "0 0 0 100"
 	}
 

@@ -397,7 +397,7 @@
 		"RightJustify"	  		"1"	// If 1, draw notices from the right
 		"TextFont"				"KillfeedFontSmall"
 		"CTTextColor"			"CTLight"
-		"TerroristTextColor"	"TerroLight"
+		"TerroristTextColor"	"TRLight"
 		"bgcolor_override" 		"0 0 0 100"
 	}
 
@@ -448,9 +448,8 @@
 		"TextFont"				"Roboto"
 	}
 
-	// Textual display typically used by game_text and env_message entities
 	HudMessage
-	{
+	{	// Textual display typically used by game_text and env_message entities
 		"fieldName"				"HudMessage"
 		"visible"				"1"
 		"enabled"				"1"
@@ -462,22 +461,21 @@
 		"bgcolor_override"		"250 0 0 200"
 	}
 
-	// Radio Menu / CP Menu / Left side panel /
 	HudMenu
-	{
+	{	// Radio Menu / CP Menu / Left side panel /
 		"fieldName"				"HudMenu"
 		"visible"				"1"
 		"enabled"				"1"
 		"wide"					"640"
 		"tall"					"480"
 		"zpos"					"1"
-		"spacing"				"3"
+		"ypos"					"27"
+		"spacing"				"2"
 
-		"TextFont"				"Roboto-HudMenu"
+		"TextFont"				"Roboto-HudMenuDisabled"
 		"ItemFont"				"Roboto-HudMenu"
 		"ItemFontPulsing"		"Roboto-HudMenu"
 	}
-
 	HudCloseCaption
 	{
 		"fieldName" 			"HudCloseCaption"
@@ -648,28 +646,48 @@
 	}
 
 	HudHintDisplay
-	{
+	{	// Center Timer HUD Panel
 		"fieldName"				"HudHintDisplay"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"c-240" // c-240
+		"xpos"					"cs-0.5" // c-240
 		"ypos"					"c100" // c60
 		"wide"					"480" //480
 		"tall"					"100" //100
 		"text_xpos"				"8"
-		"text_ypos"				"8"
-		"center_x"				"0"	// center text horizontally
-		"center_y"				"-1"	// align text on the bottom
+		"text_ypos"				"2"
+		"center_x"				"0" // center text horizontally
+		"center_y"				"-1" // align text on the bottom
 		"HintSize"				"1"
+		"font"					"HudHintText"
+	}
+	"prx.HintLine"
+	{
+		"ControlName"			"ScalableImagePanel"
+		"fieldName"				"prx.HintLine"
+		"xpos"					"0"
+		"ypos"					"1"
+		"zpos"					"-1"
+		"wide"					"48"
+		"tall"					"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"image"					"prxhudhint"
+		"scaleImage"			"1"
+		"proportionalToParent"	"1"
+		"pin_to_sibling"		"HudHintDisplay"
+		"pin_corner_to_sibling"	"PIN_CENTER_BOTTOM"
+		"pin_to_sibling_corner"	"PIN_CENTER_BOTTOM"
+		"autoResize"			"1"
 	}
 
 	HudHintKeyDisplay
-	{
+	{	// Right side panel
 		"fieldName"				"HudHintKeyDisplay"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"r120"
-		"ypos"					"r340"
+		"xpos"					"r100"
+		"ypos"					"r300"
 		"wide"					"100"
 		"tall"					"200"
 		"text_xpos"				"8"
@@ -677,6 +695,7 @@
 		"text_xgap"				"8"
 		"text_ygap"				"8"
 		"TextColor"				"255 170 0 220"
+		"font"					"HudHintText"
 
 		"PaintBackgroundType"	"2"
 	}

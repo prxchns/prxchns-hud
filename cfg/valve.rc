@@ -14,6 +14,29 @@ exec autoexec.cfg
 stuffcmds
 
 
+//scoreboard text
+cl_scoreboard_ct_color_red "40"
+cl_scoreboard_ct_color_green "130"
+cl_scoreboard_ct_color_blue "255"
+cl_scoreboard_clan_ct_color_red "40"
+cl_scoreboard_clan_ct_color_green "130"
+cl_scoreboard_clan_ct_color_blue "255"
+
+cl_scoreboard_t_color_red "255"
+cl_scoreboard_t_color_green "30"
+cl_scoreboard_t_color_blue "120"
+cl_scoreboard_clan_t_color_red "255"
+cl_scoreboard_clan_t_color_green "30"
+cl_scoreboard_clan_t_color_blue "120"
+
+cl_scoreboard_dead_color_red "168"
+cl_scoreboard_dead_color_green "168"
+cl_scoreboard_dead_color_blue "168"
+cl_scoreboard_dead_clan_color_red "168"
+cl_scoreboard_dead_clan_color_green "168"
+cl_scoreboard_dead_clan_color_blue "168"
+
+
 // Comment the line bellow to disable menu map background
 map_background background01
 sv_unlockedchapters 99

@@ -25,38 +25,57 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Courier New"
-				"tall"		"10"
+				"name"		"Roboto Mono"	// Courier New
+				"tall"		"13"	//10
 				"weight"	"500"
 				"antialias"	"1"
 			}
 		}
-		// fonts are used in order that they are listed
 		"DebugFixedSmall"
 		{
 			"1"
 			{
-				"name"		"Courier New"
-				"tall"		"7"
+				"name"		"Roboto Mono"
+				"tall"		"12"	//7
 				"weight"	"500"
 				"antialias"	"1"
 			}
 		}
-
 		"Default"
 		{
+			"1" // Main HUD font (Panels,console input,...)
+			{
+				"name"			"Roboto Condensed"
+				"tall"			"13"
+				"weight"		"700"
+				"antialias"		"1"
+			}
+		}
+		"DefaultSmall"
+		{	// Console command auto completion ~
 			"1"
 			{
-				"name"		"Tahoma"
-				"tall"		"16"
-				"weight"	"500"
+				"name"			"Roboto Condensed"
+				"tall"			"13"
+				"weight"		"400"
+				"antialias"		"1"
+			}
+		}
+		"DefaultVerySmall"
+		{	// ?
+			"1"
+			{
+				"name"			"Roboto Condensed"
+				"tall"			"12"
+				"weight"		"400"
+				"antialias"		"1"
 			}
 		}
 		"DefaultBold"
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Roboto Condensed Black"
 				"tall"		"16"
 				"weight"	"1000"
 			}
@@ -65,47 +84,41 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Roboto Condensed"
 				"tall"		"16"
 				"weight"	"500"
 				"underline"	"1"
 			}
 		}
-		"DefaultSmall"
-		{
-			"1"
-			{
-				"name"		"Tahoma"
-				"tall"		"12"
-				"weight"	"0"
-			}
-		}
+
 		"DefaultSmallDropShadow"
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Roboto Condensed"
 				"tall"		"13"
 				"weight"	"0"
 				"dropshadow"	"1"
 			}
 		}
-		"DefaultVerySmall"
+		"DefaultLarge"
 		{
 			"1"
 			{
-				"name"		"Tahoma"
-				"tall"		"12"
-				"weight"	"0"
+				"name"			"Roboto Condensed Black"
+				"tall"			"12"
+				"weight"		"1000"
+				"antialias"		"1"
 			}
 		}
 		"UiBold"
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Roboto Condensed Black"
 				"tall"		"12"
 				"weight"	"1000"
+				"antialias"	"1"
 			}
 		}
 
@@ -126,7 +139,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Trebuchet MS"
+				"name"		"Roboto Condensed"
 				"tall"		"20"
 				"weight"	"900"
 			}
@@ -136,7 +149,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Trebuchet MS"
+				"name"		"Roboto Condensed"
 				"tall"		"18"
 				"weight"	"900"
 			}
@@ -148,7 +161,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto" //Trebuchet MS
+				"name"		"Roboto Condensed" //Trebuchet MS
 				"tall"		"36" // 40
 				"weight"	"900"
 			}
@@ -157,7 +170,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"37" // 41
 				"weight"	"900"
 			}
@@ -166,7 +179,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"38" // 42
 				"weight"	"900"
 			}
@@ -175,7 +188,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"39" // 43
 				"weight"	"900"
 			}
@@ -184,7 +197,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"40" // 44
 				"weight"	"900"
 			}
@@ -193,7 +206,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"41" // 45
 				"weight"	"900"
 			}
@@ -267,6 +280,7 @@ Scheme
 	//////////////////// BORDERS //////////////////////////////
 	//
 	// describes all the border types
+	// inset 0 0 0 0 = top right bottom left
 	Borders
 	{
 		BaseBorder		DepressedBorder
@@ -284,13 +298,13 @@ Scheme
 
 		DepressedBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -298,8 +312,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -307,7 +321,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -316,20 +330,20 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "0 0"
+					"color" "Blank"
+					"offset" "0 11"
 				}
 			}
 		}
 		RaisedBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -337,7 +351,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -346,8 +360,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -355,7 +369,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -363,7 +377,7 @@ Scheme
 
 		TitleButtonBorder
 		{
-			"backgroundtype" "0"
+			"backgroundtype" "2"
 		}
 
 		TitleButtonDisabledBorder
@@ -378,13 +392,13 @@ Scheme
 
 		ScrollBarButtonBorder
 		{
-			"inset" "2 2 0 0"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -392,8 +406,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -401,7 +415,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -410,7 +424,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -418,13 +432,13 @@ Scheme
 
 		ScrollBarButtonDepressedBorder
 		{
-			"inset" "2 2 0 0"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -432,8 +446,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -441,7 +455,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -450,7 +464,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -458,13 +472,13 @@ Scheme
 
 		TabBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -472,8 +486,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -481,7 +495,15 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
+					"offset" "0 0"
+				}
+			}
+			Bottom
+			{
+				"1"
+				{
+					"color"	"Blank"
 					"offset" "0 0"
 				}
 			}
@@ -490,12 +512,12 @@ Scheme
 
 		TabActiveBorder
 		{
-			"inset" "0 0 1 0"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -504,8 +526,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -513,7 +535,15 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
+					"offset" "0 0"
+				}
+			}
+			Bottom
+			{
+				"1"
+				{
+					"color"	"CTLight"
 					"offset" "0 0"
 				}
 			}
@@ -523,12 +553,12 @@ Scheme
 
 		ToolTipBorder
 		{
-			"inset" "0 0 1 0"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -537,8 +567,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -546,7 +576,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -555,7 +585,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "prx.Primary"
 					"offset" "0 0"
 				}
 			}
@@ -564,56 +594,56 @@ Scheme
 		// this is the border used for default buttons (the button that gets pressed when you hit enter)
 		ButtonKeyFocusBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Selection"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "Border.Bright"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 			Top
 			{
 				"1"
 				{
-					"color" "Border.Selection"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "Border.Bright"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 			Right
 			{
 				"1"
 				{
-					"color" "Border.Selection"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 			Bottom
 			{
 				"1"
 				{
-					"color" "Border.Selection"
+					"color" "Blank"
 					"offset" "0 0"
 				}
-				"2"
+				"2"	// UI Selected button
 				{
-					"color" "Border.Dark"
+					"color" "prx.Primary"
 					"offset" "0 0"
 				}
 			}
@@ -621,13 +651,13 @@ Scheme
 
 		ButtonDepressedBorder
 		{
-			"inset" "2 1 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -635,8 +665,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -644,7 +674,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -653,7 +683,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -661,7 +691,6 @@ Scheme
 	}
 
 	//////////////////////// CUSTOM FONT FILES /////////////////////////////
-	//
 	// specifies all the custom (non-system) font files that need to be loaded to service the above described fonts
 	CustomFontFiles
 	{

@@ -130,16 +130,16 @@ Scheme
 		RichText.SelectedTextColor			"Black"
 		RichText.SelectedBgColor			"Orange"
 
-		ScrollBar.Wide						11
+		ScrollBar.Wide						8
 
 		ScrollBarButton.FgColor				"White"
 		ScrollBarButton.BgColor				"Blank"
 		ScrollBarButton.ArmedFgColor		"White"
 		ScrollBarButton.ArmedBgColor		"Blank"
-		ScrollBarButton.DepressedFgColor	"White"
+		ScrollBarButton.DepressedFgColor	"Blank"
 		ScrollBarButton.DepressedBgColor	"Blank"
 
-		ScrollBarSlider.FgColor				"50 50 50 120"	// nob color
+		ScrollBarSlider.FgColor				"23 23 36 120"	// nob color
 		ScrollBarSlider.BgColor				"0 0 0 0"		// slider background color
 
 		SectionedListPanel.HeaderTextColor	"White"

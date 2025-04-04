@@ -28,7 +28,7 @@ Scheme
 		{
 			"5"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"30"
 				"weight"	"1100"
 				"range"		"0x0000 0x017F"
@@ -40,7 +40,7 @@ Scheme
 		{
 			"4"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"31"
 				"weight"	"1100"
 				"range"		"0x0000 0x017F"
@@ -53,7 +53,7 @@ Scheme
 		{
 			"4"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"41"
 				"weight"	"1100"
 				"range"		"0x0000 0x017F"
@@ -66,7 +66,7 @@ Scheme
 		{
 			"4"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"48" //48
 				"weight"	"1300"
 				"range"		"0x0000 0x017F"
@@ -79,7 +79,7 @@ Scheme
 		{
 			"4"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"54" //54
 				"weight"	"1300"
 				"range"		"0x0000 0x017F"
@@ -92,7 +92,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
+				"name"		"Roboto Condensed"
 				"tall"		"14" //14
 				"weight"	"700"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -103,7 +103,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Roboto Condensed"
 				"tall"		"12"
 				"weight"	"500"
 				"underline"	"1"
@@ -111,7 +111,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"11"
 				"range"		"0x0000 0x00FF"
 				"weight"	"800"
@@ -121,7 +121,7 @@ Scheme
 		{
 			"4"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"18"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -134,7 +134,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"16" // 16
 				"weight"	"1000"
 				"additive"	"1"
@@ -147,7 +147,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto"
+				"name"		"Roboto Condensed"
 				"tall"		"10" // 11
 				"weight"	"700"
 				"antialias"	"1"
@@ -160,11 +160,11 @@ Scheme
 		{
 			"4"
 			{
-				"name"		"Verdana"
+				"name"		"Roboto Condensed"
 				"tall"		"16" // 16
 				"weight"	"900"
 				"antialias"	"1"
-				"yres"	"1024 1199"
+				"yres"		"1024 1199"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 			}
 		}
@@ -173,7 +173,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Courier New"
+				"name"		"Roboto Condensed"
 				"tall"		"14"
 				"weight"	"400"
 				"outline"	"1"
@@ -184,7 +184,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Courier New"
+				"name"		"Roboto Condensed"
 				"tall"		"14"
 				"weight"	"400"
 				"outline"	"1"
@@ -192,141 +192,141 @@ Scheme
 			}
 		}
 		CSType
-		  {
-		   "1"
-		   {
-			"name"  "cs_edited" // cs.ttf
-			"tall"  "40" //80
-			"weight" "0"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-		   }
-		  }
+		{
+			"1"
+			{
+			"name"			"cs_edited" // cs.ttf
+			"tall"			"40" //80
+			"weight"		"0"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
+		}
 
 		CSweapons // temporary, for testing. overlaps with CSType, above
-		  {
-		   "1"
-		   {
-			"name"  "Counter-Strike_edited" // Cstrike.ttf
-			"tall"  "40" //70
-			"weight" "0"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-		   }
-		  }
+		{
+			"1"
+			{
+			"name"			"Counter-Strike_edited" // Cstrike.ttf
+			"tall"			"40" //70
+			"weight"		"0"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
+		}
 
 		CSweaponsSmall
-		  {
-		   "1"
-		   {
-			"name"  "Counter-Strike_edited" // Cstrike.ttf
-			"tall"  "30" //60
-			"weight" "0"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-		   }
-		  }
+		{
+			"1"
+			{
+			"name"			"Counter-Strike_edited" // Cstrike.ttf
+			"tall"			"30" //60
+			"weight"		"0"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
+		}
 
 
 		CSTypeSmall
-		  {
-		   "1"
-		   {
-			"name"  "cs_edited" // cs.ttf
-			"tall"  "30" // 40
-			"weight" "20"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-		   }
-		  }
+		{
+			"1"
+			{
+			"name"			"cs_edited" // cs.ttf
+			"tall"			"30" // 40
+			"weight"		"20"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
+		}
 
-		  CSTypelr
-		  {
-		   "1"
-		   {
-			"name"  "cs_edited" // cs.ttf
-			"tall"  "30"
-			"weight" "0"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-		   }
-		  }
+		CSTypelr
+		{
+			"1"
+			{
+			"name"			"cs_edited" // cs.ttf
+			"tall"			"30"
+			"weight"		"0"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
+		}
 
-		  CSTypeDeath
-		  {
-		   "1"
-		   {
-			"name"  "csd_edited" // csd.ttf
-			"tall"  "18" // 42
-			"weight" "0"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-		   }
-		  }
+		CSTypeDeath
+		{
+			"1"
+			{
+			"name"			"csd_edited" // csd.ttf
+			"tall"			"18" // 42
+			"weight"		"0"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
+		}
 
 		Icons
 		{
 			"1"
-			 {
-			"name"  "Counter-Strike_edited" // Cstrike.ttf
-			"tall"  "12"//20
-			"weight" "0"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-			 }
+			{
+			"name"			"Counter-Strike_edited" // Cstrike.ttf
+			"tall"			"12"//20
+			"weight"		"0"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
 		}
 		IconsBigger
 		{
 			"1"
-			 {
-			"name"  "Counter-Strike_edited" // Cstrike.ttf
-			"tall"  "30"
-			"weight" "0"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-			 }
+			{
+			"name"			"Counter-Strike_edited" // Cstrike.ttf
+			"tall"			"30"
+			"weight"		"0"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
 		}
 		IconsBig
 		{
 			"1"
-			 {
-			"name"  "Counter-Strike_edited" // Cstrike.ttf
-			"tall"  "28"
-			"weight" "0"
-			"additive"	"1"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-			 }
+			{
+			"name"			"Counter-Strike_edited" // Cstrike.ttf
+			"tall"			"28"
+			"weight"		"0"
+			"additive"		"1"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
 		}
 		IconsSmall
 		{
 			"1"
-			 {
-			"name"  "Counter-Strike_edited" // Cstrike.ttf
-			"tall"  "6" //20
-			"weight" "0"
-			"additive" "0"
-			"antialias"	"1"
-			"custom"	"1" [$OSX]
-			 }
+			{
+			"name"			"Counter-Strike_edited" // Cstrike.ttf
+			"tall"			"6" //20
+			"weight"		"0"
+			"additive"		"0"
+			"antialias"		"1"
+			"custom"		"1" [$OSX]
+			}
 		}
 
 		ClientTitleFont
 		{
 			"1"
 			{
-				"name"  "Counter-Strike Logo" // CSlogo.ttf
-				"tall"  "40"
-				"weight" "0"
-				"additive" "0"
+				"name"		"Counter-Strike Logo"	// CSlogo.ttf
+				"tall"		"40"
+				"weight"	"0"
+				"additive"	"0"
 				"antialias"	"1"
 			}
 		}
@@ -348,17 +348,17 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "Roboto" // Cstrike.ttf
-				"tall"  "12" // 18
-				"weight" "0"
+				"name"		"Roboto" // Cstrike.ttf
+				"tall"		"12" // 18
+				"weight"	"0"
 				"additive"	"1"
 				"antialias"	"1"
 			}
 			"2"
 			{
-				"name"  "Roboto" //Verdana
-				"tall"  "18" // 24
-				"weight" "0"
+				"name"		"Roboto" //Verdana
+				"tall"		"18" // 24
+				"weight"	"0"
 				"additive"	"1"
 				"antialias"	"1"
 			}
@@ -367,9 +367,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "Roboto" // Cstrike.ttf
-				"tall"  "22" //28
-				"weight" "0"
+				"name"		"Roboto"
+				"tall"		"22" //28
+				"weight"	"0"
 				"additive"	"1"
 				"antialias"	"1"
 			}
@@ -378,10 +378,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "StratumNo2-Bold" // Cstrike.ttf
-				"tall"  "12"
-				"weight" "0"
-				"additive"	"1"
+				"name"		"Roboto Condensed"
+				"tall"		"9"
+				"weight"	"400"
+				"additive"	"0"
 				"antialias"	"1"
 			}
 		}
@@ -389,10 +389,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "StratumNo2-Bold" // Cstrike.ttf
-				"tall"  "16"
-				"weight" "0"
-				"additive"	"1"
+				"name"		"Roboto Condensed"
+				"tall"		"11"
+				"weight"	"400"
+				"additive"	"0"
 				"antialias"	"1"
 			}
 		}
@@ -400,10 +400,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "StratumNo2-Bold" // Cstrike.ttf
-				"tall"  "20"
-				"weight" "0"
-				"additive"	"1"
+				"name"		"Roboto Condensed"
+				"tall"		"12"
+				"weight"	"400"
+				"additive"	"0"
 				"antialias"	"1"
 			}
 		}
@@ -465,7 +465,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Trebuchet MS"
+				"name"		"Roboto Condensed"
 				"tall"		"16"
 				"weight"	"900"
 				"range"		"0x0000 0x007F"	//	Basic Latin
@@ -477,7 +477,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Trebuchet MS"
+				"name"		"Roboto Condensed"
 				"tall"		"12"
 				"weight"	"900"
 				"range"		"0x0000 0x007F"	//	Basic Latin
@@ -489,8 +489,8 @@ Scheme
 		{
 			"4"
 			{
-				"name"		"Verdana"
-				"tall"		"20"
+				"name"		"Roboto Condensed"
+				"tall"		"17"
 				"weight"	"700"
 				"yres"		"1024 1199"
 				"dropshadow"	"0"
@@ -731,7 +731,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana bold"
+				"name"		"Roboto Condensed"
 				"tall"		"8"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -743,7 +743,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana bold"
+				"name"		"Roboto Condensed"
 				"tall"		"12" // 14
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -755,7 +755,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana bold"
+				"name"		"Roboto Condensed"
 				"tall"		"45"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -767,7 +767,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana bold"
+				"name"		"Roboto Condensed"
 				"tall"		"8"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -779,7 +779,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana bold"
+				"name"		"Roboto Condensed"
 				"tall"		"12"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -791,7 +791,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana bold"
+				"name"		"Roboto Condensed"
 				"tall"		"10"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -803,7 +803,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana"
+				"name"		"Roboto Condensed"
 				"tall"		"8" [!$OSX]
 				"tall"		"11" [$OSX]
 				"weight"	"0"
@@ -816,7 +816,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana"
+				"name"		"Roboto Condensed"
 				"tall"		"8" [!$OSX]
 				"tall"		"9" [$OSX]
 				"weight"	"0"
@@ -829,7 +829,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana"
+				"name"		"Roboto Condensed"
 				"tall"		"7" [!$OSX]
 				"tall"		"8" [$OSX]
 				"weight"	"0"
@@ -842,7 +842,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"verdana"
+				"name"		"Roboto Condensed"
 				"tall"		"10"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -864,7 +864,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -873,7 +873,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -882,7 +882,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -904,7 +904,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -913,7 +913,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -922,7 +922,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -944,7 +944,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BgColor"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -953,7 +953,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BgColor"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -961,7 +961,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BgColor"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -983,7 +983,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -992,7 +992,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -1001,7 +1001,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1023,7 +1023,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -1032,7 +1032,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -1041,7 +1041,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1050,7 +1050,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1063,7 +1063,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -1072,7 +1072,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -1081,7 +1081,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1090,7 +1090,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1103,7 +1103,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -1112,7 +1112,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1121,7 +1121,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "1 1"
 				}
 			}
@@ -1183,7 +1183,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -1192,7 +1192,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -1201,7 +1201,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1223,7 +1223,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1232,7 +1232,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -1241,7 +1241,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1264,7 +1264,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1273,7 +1273,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -1282,7 +1282,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1305,7 +1305,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -1314,7 +1314,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1323,7 +1323,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "1 1"
 				}
 			}
@@ -1345,7 +1345,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -1354,7 +1354,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -1363,7 +1363,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "1 1"
 				}
 			}
@@ -1394,7 +1394,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Border.Dark"
 					"offset" "1 0"
 				}
 			}
