@@ -148,7 +148,7 @@ Scheme
 			"1"
 			{
 				"name"		"Roboto Condensed"
-				"tall"		"10" // 11
+				"tall"		"11"
 				"weight"	"700"
 				"antialias"	"1"
 				"additive"	"1"
@@ -275,7 +275,7 @@ Scheme
 			"1"
 			{
 			"name"			"Counter-Strike_edited" // Cstrike.ttf
-			"tall"			"12"//20
+			"tall"			"14"//20
 			"weight"		"0"
 			"additive"		"1"
 			"antialias"		"1"
@@ -311,7 +311,7 @@ Scheme
 			"1"
 			{
 			"name"			"Counter-Strike_edited" // Cstrike.ttf
-			"tall"			"6" //20
+			"tall"			"10" //20
 			"weight"		"0"
 			"additive"		"0"
 			"antialias"		"1"
@@ -600,7 +600,7 @@ Scheme
 			{
 				"name"		"Verdana Bold" [!$OSX]
 				"name"		"Helvetica" [$OSX]
-				"tall"		"9"
+				"tall"		"10"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1" [!$OSX]

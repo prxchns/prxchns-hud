@@ -20,9 +20,9 @@ Scheme
 	Colors
 	{
 		// main colors
-		"prx.bgBase"						"13 16 23 180"		// Base background color
-		"prx.bgSurface"						"13 16 23 90"		// Secondary bg color
-		"prx.bgOverlay"						"23 26 33 90"		// Tertiary bg color
+		"prx.bgBase"						"13 16 23 190"		// Base background color
+		"prx.bgSurface"						"13 16 23 160"		// Secondary bg color
+		"prx.bgOverlay"						"23 26 33 140"		// Tertiary bg color
 		"prx.Text"							"234 232 254 255"	// Main text color
 		"prx.Subtle"						"154 150 180 255"	// Secondary text color..
 		"prx.Muted"							"120 116 144 255"	// Tertiary text color
@@ -288,9 +288,9 @@ Scheme
 		{
 			"1" // CP Menu / Radio Menu / Left side panel font
 			{
-				"name"			"Roboto Condensed Light"
-				"tall"			"7"
-				"weight"		"600"
+				"name"			"Roboto Condensed"
+				"tall"			"8"
+				"weight"		"300"
 				"antialias"		"0"
 				"additive"		"0"
 				"dropshadow"	"1"
@@ -302,11 +302,10 @@ Scheme
 			{
 				"name"			"Roboto Condensed Light"
 				"tall"			"7"
-				"weight"		"500"
+				"weight"		"600"
 				"antialias"		"0"
 				"additive"		"1"
 				"dropshadow"	"0"
-				"outline"		"1"
 			}
 		}
 		"Roboto-Light"
@@ -436,10 +435,10 @@ Scheme
 		{
 			"1"	// Used by scoreboard and spectator UI for names which don't map in the normal fashion
 			{
-				"name"		"Roboto Condensed Light"
-				"tall"		"10"
-				"weight"	"0"
-				"antialias"	"1"
+				"name"			"Roboto Condensed Light"
+				"tall"			"10"
+				"weight"		"0"
+				"antialias"		"1"
 			}
 		}
 		"DefaultLarge"

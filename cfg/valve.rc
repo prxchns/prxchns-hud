@@ -38,6 +38,6 @@ cl_scoreboard_dead_clan_color_blue "168"
 
 
 // Comment the line bellow to disable menu map background
-map_background background01
+//map_background background01
 sv_unlockedchapters 99
 clear

@@ -660,6 +660,7 @@
 		"center_y"				"-1" // align text on the bottom
 		"HintSize"				"1"
 		"font"					"HudHintText"
+		"backgroundtype"		"1"
 	}
 	"prx.HintLine"
 	{
@@ -668,17 +669,16 @@
 		"xpos"					"0"
 		"ypos"					"1"
 		"zpos"					"-1"
-		"wide"					"48"
+		"wide"					"42"
 		"tall"					"2"
 		"visible"				"1"
 		"enabled"				"1"
-		"image"					"prxhudhint"
+		"image"					"replay/thumbnails/prxhudhint"
 		"scaleImage"			"1"
 		"proportionalToParent"	"1"
 		"pin_to_sibling"		"HudHintDisplay"
 		"pin_corner_to_sibling"	"PIN_CENTER_BOTTOM"
 		"pin_to_sibling_corner"	"PIN_CENTER_BOTTOM"
-		"autoResize"			"1"
 	}
 
 	HudHintKeyDisplay
@@ -696,7 +696,6 @@
 		"text_ygap"				"8"
 		"TextColor"				"255 170 0 220"
 		"font"					"HudHintText"
-
 		"PaintBackgroundType"	"2"
 	}
 
