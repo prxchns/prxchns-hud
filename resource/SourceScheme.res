@@ -116,7 +116,7 @@ Scheme
 			"1"
 			{
 				"name"		"Roboto Condensed Black"
-				"tall"		"12"
+				"tall"		"13"
 				"weight"	"1000"
 				"antialias"	"1"
 			}
@@ -289,12 +289,6 @@ Scheme
 		MenuBorder		RaisedBorder
 		BrowserBorder	DepressedBorder
 		PropertySheetBorder	RaisedBorder
-
-		FrameBorder
-		{
-			// rounded corners for frames
-			"backgroundtype" "2"
-		}
 
 		DepressedBorder
 		{
@@ -544,7 +538,7 @@ Scheme
 				"1"
 				{
 					"color"	"CTLight"
-					"offset" "0 0"
+					"offset" "0 10"
 				}
 			}
 
@@ -636,15 +630,10 @@ Scheme
 			}
 			Bottom
 			{
-				"1"
-				{
-					"color" "Blank"
-					"offset" "0 0"
-				}
-				"2"	// UI Selected button
+				"1"	// UI Selected button
 				{
 					"color" "prx.Primary"
-					"offset" "0 0"
+					"offset" "0 10"
 				}
 			}
 		}

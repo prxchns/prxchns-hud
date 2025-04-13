@@ -84,9 +84,9 @@ Scheme
 		CheckButton.TextColor				"prx.Muted"
 		CheckButton.SelectedTextColor		"prx.Text"
 		CheckButton.BgColor					"prx.bgBase"
-		CheckButton.Border1					"Blank"		// the left checkbutton border Border.Dark
-		CheckButton.Border2					"Blank"		// the right checkbutton border Border.Bright
-		CheckButton.Check					"prx.Text"			// color of the check itself
+		CheckButton.Border1					"Blank"				// checkbox left side border Border.Dark
+		CheckButton.Border2					"Blank"				// checkbox right side border Border.Bright
+		CheckButton.Check					"prx.Text"			// checkcheckbox tick
 
 		ComboBoxButton.ArrowColor			"prx.Subtle"
 		ComboBoxButton.ArmedArrowColor		"prx.Text"
@@ -94,16 +94,16 @@ Scheme
 		ComboBoxButton.DisabledBgColor		"Blank"
 
 		Frame.TitleTextInsetX				"12"
-		Frame.ClientInsetX					"4"
+		Frame.ClientInsetX					"2"
 		Frame.ClientInsetY					"2"
 		Frame.BgColor						"prx.bgBase"		// Panel Color
 		Frame.OutOfFocusBgColor				"prx.bgSurface"		// Panel out of focus
 		Frame.FocusTransitionEffectTime		"0.3"				// time it takes for a window to fade in/out on focus/out of focus
 		Frame.TransitionEffectTime			"0.3"				// time it takes for a window to fade in/out on open/close
-		Frame.AutoSnapRange					"0"
+		Frame.AutoSnapRange					"4"
 
-		FrameGrip.Color1					"200 200 200 196"
-		FrameGrip.Color2					"0 0 0 196"
+		FrameGrip.Color1					"Blank"
+		FrameGrip.Color2					"Blank"
 
 		FrameTitleButton.FgColor			"200 200 200 196"
 		FrameTitleButton.BgColor			"Blank"
@@ -122,7 +122,7 @@ Scheme
 		FrameTitleBar.DisabledBgColor		"Blank"
 
 		GraphPanel.FgColor					"prx.Text"
-		GraphPanel.BgColor					"prx.bgBase"
+		GraphPanel.BgColor					"Blank"
 
 		Label.TextDullColor					"prx.Muted"
 		Label.TextColor						"prx.Subtle"
@@ -142,7 +142,7 @@ Scheme
 		ListPanel.SelectedOutOfFocusBgColor	"prx.Muted"
 
 		Menu.TextColor						"prx.Text"
-		Menu.BgColor						"66 66 66 20" 		// dropdowns
+		Menu.BgColor						"66 66 66 20"	// dropdowns
 		Menu.ArmedTextColor					"28 28 28 255"
 		Menu.ArmedBgColor					"130 130 130 40"
 		Menu.TextInset						"6"
@@ -151,15 +151,13 @@ Scheme
 
 		Panel.FgColor						"prx.Subtle"
 		Panel.BgColor						"Blank"
-
 		ProgressBar.FgColor					"prx.Text"
+		ProgressBar.BgColor					"Blank"
 		HTML.BgColor						"Black"
 		BuyPreset.BgColor					"0 0 0 128"
 		BuyPresetListBox.BgColor			"0 0 0 128"
 		Popup.BgColor						"0 0 0 230"
-		ProgressBar.FgColor					"prx.Text"
 
-		ProgressBar.BgColor					"prx.bgBase"
 		PropertySheet.TextColor				"prx.Muted"
 		PropertySheet.SelectedTextColor		"prx.Text"
 		PropertySheet.TransitionEffectTime	"0.25"				// time to change from one tab to another
@@ -174,13 +172,13 @@ Scheme
 
 		ScrollBar.Wide						"10"
 		ScrollBarButton.FgColor				"Blank"
-		ScrollBarButton.BgColor				"Blank"		// Blank
+		ScrollBarButton.BgColor				"Blank"
 		ScrollBarButton.ArmedFgColor		"prx.Text"
 		ScrollBarButton.ArmedBgColor		"prx.bgSurface"
 		ScrollBarButton.DepressedFgColor	"prx.Text"
 		ScrollBarButton.DepressedBgColor	"255 255 255 255"
-		ScrollBarSlider.FgColor				"66 135 245 140"		// slider nob color
-		ScrollBarSlider.BgColor				"Blank"		// slider background color
+		ScrollBarSlider.FgColor				"66 135 245 140"	// slider nob color
+		ScrollBarSlider.BgColor				"Blank"
 
 		// Settings menu keybinds
 		SectionedListPanel.HeaderTextColor	"prx.Text"
@@ -284,30 +282,6 @@ Scheme
 				"antialias"		"1"
 			}
 		}
-		"Roboto-HudMenu"
-		{
-			"1" // CP Menu / Radio Menu / Left side panel font
-			{
-				"name"			"Roboto Condensed"
-				"tall"			"8"
-				"weight"		"300"
-				"antialias"		"0"
-				"additive"		"0"
-				"dropshadow"	"1"
-			}
-		}
-		"Roboto-HudMenuDisabled"
-		{
-			"1" // CP Menu / Radio Menu / Left side panel font
-			{
-				"name"			"Roboto Condensed Light"
-				"tall"			"7"
-				"weight"		"600"
-				"antialias"		"0"
-				"additive"		"1"
-				"dropshadow"	"0"
-			}
-		}
 		"Roboto-Light"
 		{
 			"1"
@@ -336,6 +310,30 @@ Scheme
 				"tall"			"7"
 				"weight"		"300"
 				"antialias"		"1"
+			}
+		}
+		"Roboto-HudMenu"
+		{
+			"1" // CP Menu / Radio Menu / Left side panel font
+			{
+				"name"			"Roboto Condensed"
+				"tall"			"8"
+				"weight"		"300"
+				"antialias"		"0"
+				"additive"		"0"
+				"dropshadow"	"1"
+			}
+		}
+		"Roboto-HudMenuDisabled"
+		{
+			"1" // CP Menu / Radio Menu / Left side panel font
+			{
+				"name"			"Roboto Condensed Light"
+				"tall"			"7"
+				"weight"		"600"
+				"antialias"		"0"
+				"additive"		"1"
+				"dropshadow"	"0"
 			}
 		}
 		"Roboto-CondensedSemiBold"
@@ -415,20 +413,20 @@ Scheme
 		{
 			"1"	// ?
 			{
-				"name"		"Roboto Condensed Light"
-				"tall"		"12"
-				"weight"	"0"
-				"antialias"	"1"
+				"name"			"Roboto Condensed Light"
+				"tall"			"12"
+				"weight"		"0"
+				"antialias"		"1"
 			}
 		}
 		"DefaultVerySmall"
 		{
 			"1"	// ?
 			{
-				"name"		"Roboto Condensed Light"
-				"tall"		"14" // 17
-				"weight"	"0"
-				"antialias"	"1"
+				"name"			"Roboto Condensed Light"
+				"tall"			"14" // 17
+				"weight"		"0"
+				"antialias"		"1"
 			}
 		}
 		"DefaultVerySmallFallBack"
@@ -462,7 +460,7 @@ Scheme
 		}
 		"ConsoleText"
 		{
-			"1"	// console :)
+			"1"	// console text :)
 			{
 				"name"			"Roboto Condensed Light"
 				"tall"			"13"
@@ -509,8 +507,45 @@ Scheme
 	{
 		FrameBorder
 		{
-			"backgroundtype"	"2"	// rounded corners for frames
+			"backgroundtype"	"2"
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "Blank"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Blank"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Blank"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "Blank"
+					"offset" "0 0"
+				}
+			}
 		}
+
 	}
 
 	//----------------------------------- CUSTOM FONT FILES -----------------------------------//

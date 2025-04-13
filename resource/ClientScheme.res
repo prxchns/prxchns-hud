@@ -465,7 +465,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto Condensed"
+				"name"		"Roboto Condensed SemiBold"
 				"tall"		"16"
 				"weight"	"900"
 				"range"		"0x0000 0x007F"	//	Basic Latin
@@ -477,7 +477,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Roboto Condensed"
+				"name"		"Roboto Condensed SemiBold"
 				"tall"		"12"
 				"weight"	"900"
 				"range"		"0x0000 0x007F"	//	Basic Latin
@@ -489,7 +489,7 @@ Scheme
 		{
 			"4"
 			{
-				"name"		"Roboto Condensed"
+				"name"		"Roboto Condensed SemiBold"
 				"tall"		"17"
 				"weight"	"700"
 				"yres"		"1024 1199"
@@ -851,15 +851,13 @@ Scheme
 		}
 	}
 
-	//
 	//////////////////// BORDERS //////////////////////////////
-	//
 	// describes all the border types
 	Borders
 	{
 		BaseBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
@@ -1131,46 +1129,6 @@ Scheme
 				"1"
 				{
 					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		FrameBorder
-		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "0 1"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "ControlBG"
 					"offset" "0 0"
 				}
 			}

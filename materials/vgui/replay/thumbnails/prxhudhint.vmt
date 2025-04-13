@@ -1,8 +1,11 @@
-"UnlitGeneric"
+UnlitGeneric
 {
-	"$basetexture" "VGUI/replay/thumbnails/prxhudhint"
-	"$translucent" 1
-    $gammacolorread 1
-    $linearwrite 1
-    $alpha 1
+	"$basetexture" "vgui/replay/thumbnails/prxhudhint"
+
+	"$additive" "1"
+
+	"$color" "[0.67 1.35 2.51]"
+
+	"$gammacolorread" "1"
+	"$linearwrite" "1"
 }
