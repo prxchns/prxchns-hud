@@ -344,7 +344,8 @@ Scheme
 				"tall"			"14"
 				"weight"		"900"
 				"antialias"		"1"
-				"additive"		"1"
+				"additive"		"0"
+				"dropshadow"	"1"
 			}
 		}
 		// Default fonts
@@ -357,7 +358,7 @@ Scheme
 				"tall"			"7"
 				"weight"		"700"
 				"antialias"		"0"
-				"dropshadow"	"0"
+				"dropshadow"	"1"
 				"range"			"0x0000 0x00FF"
 			}
 		}
@@ -381,7 +382,8 @@ Scheme
 				"tall"			"13"
 				"weight"		"800"
 				"antialias"		"0"
-				"additive"		"1"
+				"additive"		"0"
+				"dropshadow"	"1"
 			}
 		}
 		"Trebuchet24"
@@ -391,7 +393,8 @@ Scheme
 				"name"			"Roboto Condensed SemiBold"
 				"tall"			"13"
 				"weight"		"800"
-				"additive"		"1"
+				"additive"		"0"
+				"dropshadow"	"1"
 			}
 		}
 		"DefaultFixedOutline"
